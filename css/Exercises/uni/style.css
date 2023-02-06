@@ -1,0 +1,50 @@
+body header {
+    background-color: rgb(228, 190, 88);
+    text-align: center;
+}
+
+/*Menu*/
+#Menu {
+    float: left;
+    padding: 20px 20px;
+}
+
+body div#Menu {
+    border-right: solid 3px green;
+    margin-right: 15px;
+    padding: 0 9rem 18rem 5px;
+}
+
+body div#Menu ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/* Last Posts*/
+#last_posts {
+    float: right;
+}
+
+body div#last_posts {
+    margin: 0 15px;
+    border: dashed 2px green;
+    padding: 0 10px 10px 0;
+}
+
+body div#last_posts ul {
+    list-style: none;
+    text-align: right;
+}
+
+body div#last_posts h2 {
+    text-align: right;
+}
+
+/*Footer*/
+body footer {
+    text-align: center;
+}

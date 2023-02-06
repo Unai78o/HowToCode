@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#header div.container {
+    background-color: #F48C06;
+}
+
+.header-text {
+    color: white;
+    font-size: 3rem;
+    padding: 10rem;
+    text-align: center;
+}
+
+.spacer {
+    aspect-ratio: 960/540;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url("svg/orange_waves.svg");
+}

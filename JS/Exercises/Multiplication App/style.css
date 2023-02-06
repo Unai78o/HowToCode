@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+html {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.main {
+    background-color: rgba(245, 245, 245, 0.658);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 80%;
+    min-height: 60%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: max-content;
+}
+
+.score {
+    font-size: 2rem;
+    margin: 20px;
+    text-align: end;
+}
+
+.ques {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 10vmin;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 2rem;    
+}
+
+.text {
+    width: 50%;
+    padding: 1rem;
+    border: solid 2px rgba(0, 0, 0, 0.884);
+    border-radius: 10px;
+    background-color: rgba(207, 207, 207, 0.555);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 2.5vmin;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.sbt {
+    width: 30%;
+    height: 4rem;
+    padding: 10px 0;
+    background-color: rgba(102, 105, 105, 0.801);
+    color: azure;
+    border-radius: 10px;
+    font-size: 1.25rem;
+}
+
+.sbt:hover {
+    background-color: rgba(76, 78, 78, 0.801);
+}
+
+.sbt:active {
+    background-color: rgba(59, 61, 61, 0.801)
+}

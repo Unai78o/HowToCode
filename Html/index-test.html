@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first webpage!</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Watch</td>
+                <td>200€</td>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>599.99€</td>
+            </tr>
+            <tr>
+                <td>4k Monitor 256Hz</td>
+                <td>1300€</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 2099.99€</td>
+        </tfoot>
+        
+    </table>
+    <!-- ul is unordered list -->
+    <ul>
+        <li>Unordered 1</li>
+        <li>Unordered 2</li>
+        <li>Unordered 3</li>
+        <li>Unordered 4</li>
+    </ul>
+    <ol>
+        <li value="50">Ordered 1</li>
+        <li>Ordered 2</li>
+        <li>Ordered 3</li>
+        <li>Ordered 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-greek;">sub 1</li>
+                <li style="list-style-type: lower-greek;">sub 2</li>
+                <li style="list-style-type: lower-greek;">sub 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <form action="/form" method="POST">
+        <label for="name">Name</label>
+        <input value="monkey" type="text" id="name" name="name" placeholder="name"/>
+        <br>
+        <br>
+        <label for="Surname">Surname</label>
+        <input value="gappy" type="text" id="surname" name="surname" placeholder="surname"/>
+        <br>
+        <br>
+        <label for="comment">Comment</label><br>
+        <textarea cols="50" rows="10" id="comment" placeholder="Input your comment" name="comment">Default value</textarea>
+        <br>
+        <button type="button">Button</button>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <h1>My first heading</h1>
+    <h2>My second heading</h2>
+    <h3>My third heading</h3>
+    <h4>My fourth heading</h4>
+    <h5>My fifth heading</h5>
+    <h6>Happy hippo</h6>
+    <p>Hi im pretty happy rn!</p>
+    <p>Hi im pretty sad rn :C</p>
+    <hr>
+    <h2>Heading 2</h2>
+    
+    <p>
+        This is a <span style="color:blue">large text</span> to test <br><br>
+        the span tag!
+    </p>
+    <!-- This text is a comment and it will not 
+    show on the web -->
+    <a target="_blank" href="https://www.google.com">Go to google</a><br>
+    <img src="img/logo.png" height="100" width="100"  />
+</body>
+</html>
