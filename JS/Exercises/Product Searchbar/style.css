@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background-color: rgb(255, 255, 255);
+    width: 50vh;
+    min-width: 300px;
+    height: 70vh;
+    min-height: 400px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, .06);
+}
+
+.main-container form {
+    display: flex;
+    margin: 30px;
+    font-size: 2vh;
+    align-items: center;
+    gap: 15px;
+    border: solid 2px rgb(77, 160, 255);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: text;
+}
+
+.main-container form input {
+    border: none;
+    outline: none;
+    font-size: 2vh;
+}
