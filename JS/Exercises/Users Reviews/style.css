@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #24384d;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.container h2 {
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.container h3 {
+    color: white;
+    font-weight: 100;
+    padding-bottom: 3rem;
+}
+
+.card {
+    position: relative;
+    background-color: aliceblue;
+    width: 600px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding: 1.25rem;
+}
+
+.card img {
+    margin-bottom: 15px;
+}
+
+.card .customer-name {
+    margin-bottom: 8px;
+}
+
+.card .star {
+    color: orangered;
+    font-size: 12.5px;
+}
+
+.card p {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    color: orangered;
+    font-size: 1.8rem;
+    width: 45px;
+    height: 45px;
+    max-width: 45px;
+    max-height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.preBtn {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+}
+
+.nxtBtn {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.btn:hover {
+    color: aliceblue;
+    background-color: orangered;
+}
+
+@media only screen and (max-width: 624px) {
+    .card {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .preBtn {
+        position: absolute;
+        top: 10%;
+        right: 25%;
+    }
+
+    .nxtBtn {
+        position: absolute;
+        top: 10%;
+        right: 10%; 
+    }
+}
