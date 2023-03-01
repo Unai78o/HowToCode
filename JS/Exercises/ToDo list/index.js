@@ -35,6 +35,8 @@ addBtn.addEventListener('click', () => {
         mainContainer.appendChild(tasksContainer)
     }
 
+    taskInput.value = ""
+
     checkBtn.addEventListener('click', () => {
         if (taskText.style.textDecoration == "none"){
             taskText.style.textDecoration = "line-through"
