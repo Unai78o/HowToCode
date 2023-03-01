@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: url(https://images.unsplash.com/photo-1593062096033-9a26b09da705?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) no-repeat center center / cover;
+    height: 100vh;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    height: 80px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.container .task-input {
+    resize: none;
+    width: 79%;
+    border-radius: 10px;
+    font-size: large;
+    padding-left: 5px;
+}
+
+.container .add-btn {
+    width: 19%;
+    background: none;
+    border: solid 2px rgb(59, 148, 18);
+    border-radius: 10px;
+    font-size: large;
+    color: rgb(59, 148, 18);
+    cursor: pointer;
+}
+
+.container .add-btn:hover {
+    background-color: rgb(59, 148, 18);
+    color: white;
+    transition: 0.1s;
+}
+
+.container .add-btn:active {
+    background-color: white;
+    color: rgb(59, 148, 18);
+}
+
+.tasks-container {
+    background-color: white;
+    width: 40%;
+    border-radius: 10px;
+    padding: 0 20px;
+    height: 80px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.task-container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.task-container p {
+    font-size: 30px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.check-btn {
+    background: none;
+    height: 80%;
+    border-radius: 10px;
+    width: 90px;
+    border: solid 2px rgb(218, 196, 0);
+    color: rgb(218, 196, 0);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.check-btn:hover {
+    background-color: rgb(218, 196, 0);
+    color: white;
+    transition: 0.1s;
+}
+
+.check-btn:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(218, 196, 0);
+}
+
+.del-btn {
+    background: none;
+    height: 80%;
+    border-radius: 10px;
+    width: 90px;
+    border: solid 2px rgb(218, 33, 0);
+    color: rgb(218, 33, 0);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.del-btn:hover {
+    background-color: rgb(218, 33, 0);
+    color: white;
+    transition: 0.1s;
+}
+
+.del-btn:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(218, 33, 0);
+}
