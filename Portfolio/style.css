@@ -1,29 +1,94 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Mukta', sans-serif;
 }
 
-#header div.container {
-    background-color: #F48C06;
+body {
+    background-color: #212F45;
 }
 
-.header-text {
-    color: white;
-    font-size: 3rem;
-    padding: 10rem;
-    text-align: center;
+header {
+    position: relative;
+    height: 110vh;
 }
 
-.spacer {
-    aspect-ratio: 960/540;
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    height: 7.5%;
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #27264073;
 }
 
-.layer1 {
-    background-image: url("svg/orange_waves.svg");
+.navbar .logo {
+    margin-left: 20px;
+    height: 40px;
+}
+
+.navbar .menu {
+    color: #006466;
+    font-size: 2.5em;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.socials {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    bottom: 0;
+    left: 4%;
+}
+
+.socials .socials-bar {
+    width: 4px;
+    height: 125px;
+    border-radius: 10px 10px 0 0;
+    background-color: #006466;
+}
+
+.socials .icon {
+    color: #006466;
+    font-size: 25px;
+}
+
+.background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45em;
+    font-family: 'Bebas Neue', cursive;
+    color: #065a6067;
+    user-select: none;
+    z-index: -1;
+}
+
+.name {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name .name-intro {
+    position: absolute;
+    text-align: center;
+    font-size: 50px;
+    color: #4d6768;
+}
+
+.name .my-name {
+    text-align: center;
+    font-size: 10em;
+    color: #c0e8e9;
+    font-weight: 900;
 }
