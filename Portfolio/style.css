@@ -22,7 +22,8 @@ header {
     top: 0;
     height: 7.5%;
     width: 100%;
-    background-color: #27264073;
+    background-color: #27264000;
+    z-index: 1;
 }
 
 .navbar .logo {
@@ -65,30 +66,122 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 45em;
+    font-size: 40vw;
     font-family: 'Bebas Neue', cursive;
     color: #065a6067;
     user-select: none;
     z-index: -1;
+
 }
 
 .name {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.name .name-intro {
-    position: absolute;
-    text-align: center;
-    font-size: 50px;
-    color: #4d6768;
+    transform: translate(-50%, -70%);
 }
 
 .name .my-name {
     text-align: center;
-    font-size: 10em;
+    font-size: 9vw;
     color: #c0e8e9;
     font-weight: 900;
+}
+
+.name .my-name::before {
+    content: "my name is";
+    position: absolute;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 700;
+    transform: rotate(90deg) translate(-15%, -291%);
+    z-index: -1;
+    color: #212F45;
+}
+
+.scroll-arrow { 
+    position: relative;
+    height: 95vh;
+    font-size: 2.5vmax;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: #006466;
+    animation-name: scrollUpToDown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scrollUpToDown {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 20px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.custom-shape-divider-bottom-1677936740 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1677936740 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 101px;
+}
+
+.custom-shape-divider-bottom-1677936740 .shape-fill {
+    fill: #2B3D5A;
+}
+
+#about-me {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    background-color: #2b3d5a;
+    padding-top: 400px;
+    padding-bottom: 300px;
+}
+
+#about-me div {
+    width: 750px;
+}
+
+#about-me div h2 {
+    color: #008b8d;
+    font-size: 3vmax;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+#about-me div p {
+    color: #c0e8e9;
+    font-size: 1.15vmax;
+    margin-bottom: 30px;
+}
+
+#about-me div h3 {
+    color: #993999;
+    font-size: 1.5vmax;
+}
+
+#about-me div h3 a {
+    text-decoration: none;
+    color: rgb(0, 133, 133);
+}
+
+#about-me div h3 a:hover {
+    color: rgba(0, 133, 133, 0.473);
 }
