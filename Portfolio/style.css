@@ -66,7 +66,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40vw;
+    font-size: max(40vw, 400px);;
     font-family: 'Bebas Neue', cursive;
     color: #065a6067;
     user-select: none;
@@ -83,16 +83,17 @@ header {
 
 .name .my-name {
     text-align: center;
-    font-size: 9vw;
+    font-size: max(9vw, 90px);
     color: #c0e8e9;
     font-weight: 900;
+    white-space: nowrap;
 }
 
 .name .my-name::before {
     content: "my name is";
     position: absolute;
     text-align: center;
-    font-size: 2vw;
+    font-size: max(2vw, 20px);
     font-weight: 700;
     transform: rotate(90deg) translate(-15%, -291%);
     z-index: -1;
@@ -104,8 +105,9 @@ header {
     height: 95vh;
     font-size: 2.5vmax;
     display: flex;
-    justify-content: center;
-    align-items: end;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
     color: #006466;
     animation-name: scrollUpToDown;
     animation-duration: 1.5s;
@@ -184,4 +186,88 @@ header {
 
 #about-me div h3 a:hover {
     color: rgba(0, 133, 133, 0.473);
+}
+
+.custom-shape-divider-top-1678043361 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1678043361 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 109px;
+}
+
+.custom-shape-divider-top-1678043361 .shape-fill {
+    fill: #2B3D5A;
+}
+
+.skills {
+    position: relative;
+    padding-top: 400px;
+}
+
+.skills h2 {
+    text-align: center;
+    color: #008b8d;
+    font-size: 3vmax;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 600px) {
+    .socials {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .socials :nth-child(1) {
+        order: 2;
+    }
+
+    .socials :nth-child(2) {
+        order: 3;
+    }
+
+    .socials :nth-child(3) {
+        order: 4;
+    }
+
+    .socials .socials-bar {
+        height: 4px;
+        width: 125px;
+        position: absolute;
+        bottom: 0px;
+        border-radius: 5px;
+    }
+
+    .navbar {
+        margin-top: 10px;
+    }
+
+    .navbar .logo {
+        height: 32px;
+        width: 32px;
+    }
+
+    .navbar .menu {
+        font-size: 2em;
+    }
+
+    .name .my-name {
+        font-size: max(9vw, 70px);
+    }
+
+    .name .my-name::before {
+        font-size: max(2vw, 20px);
+        left: -14.5%;
+        top: -15%;
+    }
 }
