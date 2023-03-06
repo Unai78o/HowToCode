@@ -170,13 +170,14 @@ header {
 
 #about-me div p {
     color: #c0e8e9;
-    font-size: 1.15vmax;
+    font-size: 1.25vmax;
     margin-bottom: 30px;
 }
 
 #about-me div h3 {
     color: #993999;
-    font-size: 1.5vmax;
+    font-size: 1.6vmax;
+    white-space: nowrap;
 }
 
 #about-me div h3 a {
@@ -186,6 +187,12 @@ header {
 
 #about-me div h3 a:hover {
     color: rgba(0, 133, 133, 0.473);
+}
+
+@media screen and (max-width: 1000px) {
+    #about-me div {
+        margin: 0 50px;
+    }
 }
 
 .custom-shape-divider-top-1678043361 {
