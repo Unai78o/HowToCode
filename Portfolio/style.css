@@ -5,14 +5,6 @@
     font-family: 'Mukta', sans-serif;
 }
 
-:root {
-    --bg-color: 0, 0, 0;
-    --bg-color-2: 36, 36, 36;
-    --main-color: 252, 163, 17;
-    --secondary-color: 20, 33, 61;
-    --grey: 229, 229, 229;
-}
-
 /* Yellow Palette */
 
 /* :root {
@@ -45,7 +37,6 @@
 
 
 body {
-    background-color: rgb(var(--bg-color));
     background-color: rgb(var(--bg-color));
 }
 
@@ -101,11 +92,9 @@ header {
     height: 125px;
     border-radius: 10px 10px 0 0;
     background-color: rgb(var(--main-color));
-    background-color: rgb(var(--main-color));
 }
 
 .socials .icon {
-    color: rgb(var(--main-color));
     color: rgb(var(--main-color));
     font-size: 25px;
 }
@@ -117,7 +106,6 @@ header {
     transform: translate(-50%, -50%);
     font-size: max(40vw, 400px);;
     font-family: 'Bebas Neue', cursive;
-    color: rgb(var(--main-color));
     color: rgb(var(--main-color));
     user-select: none;
     z-index: -1;
@@ -134,7 +122,6 @@ header {
     text-align: center;
     font-size: max(9vw, 90px);
     color: #ffffff;
-    color: #ffffff;
     font-weight: 900;
     white-space: nowrap;
 }
@@ -148,7 +135,6 @@ header {
     transform: rotate(90deg) translate(-15%, -291%);
     z-index: -1;
     color: rgb(var(--bg-color));
-    color: rgb(var(--bg-color));
 }
 
 .scroll-arrow { 
@@ -159,7 +145,6 @@ header {
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    color: rgb(var(--main-color));
     color: rgb(var(--main-color));
     animation-name: scrollUpToDown;
     animation-duration: 1.5s;
@@ -197,7 +182,6 @@ header {
 
 .custom-shape-divider-bottom-1677936740 .shape-fill {
     fill: rgb(var(--bg-color-2));
-    fill: rgb(var(--bg-color-2));
 }
 
 #about-me {
@@ -205,7 +189,6 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 0;
-    background-color: rgb(var(--bg-color-2));
     background-color: rgb(var(--bg-color-2));
     padding-top: 400px;
     padding-bottom: 300px;
@@ -217,14 +200,12 @@ header {
 
 #about-me div h2 {
     color: rgb(var(--main-color));
-    color: rgb(var(--main-color));
     font-size: 3vmax;
     font-weight: 800;
     margin-bottom: 15px;
 }
 
 #about-me div p {
-    color: #ffffff;
     color: #ffffff;
     font-size: 1.25vmax;
     margin-bottom: 30px;
@@ -243,7 +224,6 @@ header {
 }
 
 #about-me div h3 a:hover {
-    color: rgba(var(--main-color), .5);
     color: rgba(var(--main-color), .5);
 }
 
@@ -271,7 +251,6 @@ header {
 
 .custom-shape-divider-top-1678043361 .shape-fill {
     fill: rgb(var(--bg-color-2));
-    fill: rgb(var(--bg-color-2));
 }
 
 .skills {
@@ -281,7 +260,6 @@ header {
 
 .skills h2 {
     text-align: center;
-    color: rgb(var(--main-color));
     color: rgb(var(--main-color));
     font-size: 3vmax;
     font-weight: 800;
