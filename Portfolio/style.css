@@ -5,13 +5,36 @@
     font-family: 'Mukta', sans-serif;
 }
 
-:root {
-    --bg-color: 0, 0, 0;
+/* Yellow Palette */
+
+/* :root {
+    --bg-color: 0, 0, 0;grey
     --bg-color-2: 36, 36, 36;
     --main-color: 252, 163, 17;
     --secondary-color: 20, 33, 61;
     --grey: 229, 229, 229;
+}  */
+
+/* Choco Mint */
+
+/* :root {
+    --bg-color: 28, 11, 25;
+    --bg-color-2: 31, 21, 29;
+    --main-color: 45, 216, 129;
+    --secondary-color: 20, 13, 79;
+    --grey: 229, 229, 229;
+} */
+
+/* Yellow Blue */
+
+:root {
+    --bg-color: 0, 8, 20;
+    --bg-color-2: 0, 29, 61;
+    --main-color: 255, 195, 0;
+    --secondary-color: 0, 53, 102;
+    --ternary-color: 255, 214, 10;
 }
+
 
 body {
     background-color: rgb(var(--bg-color));
@@ -34,10 +57,14 @@ header {
     z-index: 1;
 }
 
-.navbar .logo {
-    margin-left: 20px;
+.navbar svg {
+    width: 40px;
     height: 40px;
-    color: rgb(var(--main-color));
+    margin-left: 20px;
+}
+
+.navbar svg path {
+    fill: rgb(var(--main-color));
 }
 
 .navbar .menu {
@@ -183,7 +210,7 @@ header {
 }
 
 #about-me div h3 {
-    color: #ffffff;
+    color: rgb(var(--ternary-color));
     font-size: 1.6vmax;
     white-space: nowrap;
 }
@@ -191,6 +218,7 @@ header {
 #about-me div h3 a {
     text-decoration: none;
     color: rgb(var(--main-color));
+    text-decoration: underline;
 }
 
 #about-me div h3 a:hover {
@@ -267,7 +295,7 @@ header {
         margin-top: 10px;
     }
 
-    .navbar .logo {
+    .navbar svg {
         height: 32px;
         width: 32px;
     }
