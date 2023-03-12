@@ -37,12 +37,17 @@
 
 ::-webkit-scrollbar {
     width: 7.5px;
+    height: 7.5px;
     z-index: 1;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: rgb(var(--ternary-color));
     border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #27264000;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -282,25 +287,19 @@ header {
     display: grid;
     margin: 150px 175px;
     gap: 100px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 #skills .skill-deck .skill-card {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border: solid 3px rgb(var(--bg-color-2));
     height: 400px;
-    min-width: 250px;
     border-radius: 15px;
     box-shadow: 10px 10px 1px rgb(var(--main-color));
-}
-
-@media screen and (max-width: 1670px) {
-    #skills .skill-deck .skill-card { 
-        height: 20vmax;
-    }
 }
 
 #skills .skill-deck .skill-card i {
