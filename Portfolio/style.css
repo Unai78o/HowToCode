@@ -318,6 +318,104 @@ header {
     font-family: 'Bebas Neue';
 }
 
+#portfolio {
+    margin: 200px 0;
+}
+
+#portfolio h2 {
+    color: rgb(var(--main-color));
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 3vmax;
+}
+
+#portfolio .project-deck {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portfolio .project-card-dots {
+    display: flex;
+    gap: 5px;
+}
+
+#portfolio .project-card-dot {
+    width: 7.5px;
+    height: 7.5px;
+    background-color: rgb(var(--main-color), .25);
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+#portfolio .project-card-dot-active {
+    background-color: rgb(var(--main-color));
+}
+
+#portfolio .project-arrow {
+    color: rgb(var(--main-color));
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    transform: translate(0, -50%);
+    top: 50%;
+    font-size: 3vmax;
+    cursor: pointer;
+}
+
+#portfolio .project-arrow:hover {
+    color: rgb(var(--bg-color));
+    background-color: rgb(var(--main-color));
+    transition: ease .2s;
+}
+
+#portfolio .project-arrow:active {
+    color: rgb(var(--main-color));
+    background-color: rgb(var(--bg-color));
+    transition: ease .05s;
+}
+
+#portfolio .project-arrow-right {
+    right: 5%;
+}
+
+#portfolio .project-arrow-left {
+    left: 5%;
+}
+
+#portfolio .project-deck .project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px rgb(var(--bg-color-2));
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 10px 10px 1px rgb(var(--main-color));
+}
+
+#portfolio .project-deck .project-card h3 {
+    text-align: center;
+    color: rgb(var(--main-color));
+    font-size: 2vmax;
+    margin-bottom: 20px;
+}
+
+#portfolio .project-deck .project-card img {
+    margin: 20px 0;
+    border-radius: 5px;
+    border: solid 2px rgb(var(--bg-color-2));
+    width: 75%;
+    height: 75%;
+    
+}
+
 @media screen and (max-width: 600px) {
     .socials {
         position: fixed;
