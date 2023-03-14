@@ -5,6 +5,10 @@
     font-family: 'Mukta', sans-serif;
 }
 
+html, body {
+    overflow-x:hidden 
+} 
+
 /* Yellow Palette */
 
 /* :root {
@@ -280,6 +284,7 @@ header {
     text-align: center;
     color: rgb(var(--main-color));
     font-size: 3vmax;
+    min-width: 600px;
     font-weight: 800;
 }
 
@@ -287,7 +292,7 @@ header {
     display: grid;
     margin: 150px 175px;
     gap: 100px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 #skills .skill-deck .skill-card {
@@ -326,6 +331,7 @@ header {
     color: rgb(var(--main-color));
     margin-bottom: 100px;
     text-align: center;
+    min-width: 600px;
     font-size: 3vmax;
 }
 
@@ -334,6 +340,7 @@ header {
     position: relative;
     flex-direction: column;
     align-items: center;
+    min-width: 600px;
 }
 
 #portfolio .project-card-dots {
@@ -359,8 +366,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 5vmax;
+    height: 5vmax;
     border-radius: 20px;
     transform: translate(0, -50%);
     top: 50%;
@@ -414,6 +421,39 @@ header {
     width: 75%;
     height: 75%;
     
+}
+
+#contact {
+    position: relative;
+    margin: 200px 0;
+    background-color: rgb(var(--bg-color-2));
+}
+
+.custom-shape-divider-top-1678781084 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1678781084 svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1.3px);
+    height: 175px;
+}
+
+.custom-shape-divider-top-1678781084 .shape-fill {
+    fill: rgb(var(--bg-color));
+}
+
+#contact h2 {
+    padding-top: 200px;
+    color: rgb(var(--main-color));
+    text-align: center;
+    font-size: 3vmax;
 }
 
 @media screen and (max-width: 600px) {
