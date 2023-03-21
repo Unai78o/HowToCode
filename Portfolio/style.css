@@ -99,6 +99,12 @@ header {
     align-items: center;
 }
 
+@media screen and (max-height: 700px) {
+    .navbar {
+        margin-top: 10px;
+    }
+}
+
 .socials {
     position: fixed;
     display: flex;
@@ -426,7 +432,9 @@ header {
 #contact {
     position: relative;
     margin: 200px 0;
+    margin-bottom: 0;
     background-color: rgb(var(--bg-color-2));
+    padding: 150px 0;
 }
 
 .custom-shape-divider-top-1678781084 {
@@ -454,9 +462,11 @@ header {
     color: rgb(var(--main-color));
     text-align: center;
     font-size: 3vmax;
+    margin-bottom: 10px;
 }
 
 #contact form {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -469,6 +479,7 @@ header {
     border: solid 2px rgb(var(--main-color));
     background-color: rgba(var(--bg-color, .25));
     color: rgb(var(--main-color));
+    padding: 5px;
 }
 
 #contact .form-input::placeholder {
@@ -495,6 +506,94 @@ header {
     resize: none;
 }
 
+#contact .send-btn {
+    margin-top: 20px;
+    background-color: rgba(var(--grey));
+    border: solid 2px rgb(var(--main-color));
+    color: rgb(var(--main-color));
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 #000000;
+}
+
+#contact .send-btn:hover {
+    background-color: rgba(var(--main-color), .05);
+}
+
+#contact .send-btn:active {
+    background-color: rgb(var(--main-color));
+    color: rgb(var(--bg-color));
+}
+
+#contact .send-btn:focus {
+    box-shadow: 0 0 0 2px rgba(var(--main-color), .7);
+}
+
+.custom-shape-divider-bottom-1679383408 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1679383408 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 63px;
+}
+
+.custom-shape-divider-bottom-1679383408 .shape-fill {
+    fill: rgb(var(--bg-color));
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    color: rgb(var(--main-color));
+    margin: 75px 0;
+}
+
+footer .copyright {
+    order: 2;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+}
+
+footer .logo svg {
+    order: 1;
+    width: 25px;
+    height: 25px;
+    color: rgb(var(--main-color));
+}
+
+footer .logo svg path {
+    fill: rgb(var(--main-color));
+}
+
+footer .footer-contact {
+    order: 3;
+}
+
+footer h4 {
+    font-size: 20px;
+}
+
+footer .footer-contact span {
+    font-weight: bold;
+}
+
+footer .footer-contact a {
+    color: rgb(var(--main-color));
+
+}
 
 
 @media screen and (max-width: 600px) {
