@@ -64,7 +64,7 @@ body {
 
 header {
     position: relative;
-    height: 110vh;
+    height: 120vh;
 }
 
 .navbar {
@@ -81,14 +81,15 @@ header {
 
 .navbar svg {
     width: 40px;
+    min-width: 40px;
     height: 40px;
     margin-left: 20px;
-    height: 40px;
     color: rgb(var(--main-color));
 }
 
 .navbar svg path {
     fill: rgb(var(--main-color));
+    width: 40px;
 }
 
 .navbar .menu {
@@ -102,16 +103,6 @@ header {
 .navbar .menu i {
     order: 2;
     cursor: pointer;
-}
-
-.navbar .menu .menu-display {
-    background-color: #ffffff;
-    order: 1;
-    width: 750px;
-    height: 50px;
-    animation-name: menuFromLeft;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
 }
 
 @media screen and (max-height: 700px) {
@@ -274,6 +265,18 @@ header {
     #about-me div {
         margin: 0 50px;
     }
+
+    #about-me div p {
+        font-size: 15px;
+    }
+
+    #about-me div h2 {
+        font-size: 30px;
+    }
+
+    #about-me div h3 {
+        font-size: 20px;
+    }
 }
 
 .custom-shape-divider-top-1678043361 {
@@ -305,7 +308,6 @@ header {
     text-align: center;
     color: rgb(var(--main-color));
     font-size: 3vmax;
-    min-width: 600px;
     font-weight: 800;
 }
 
@@ -610,7 +612,18 @@ footer .footer-contact a {
 
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: ease 1s;
+}
 
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
 
 @media screen and (max-width: 600px) {
     .socials {
@@ -638,6 +651,7 @@ footer .footer-contact a {
         position: absolute;
         bottom: 0px;
         border-radius: 5px;
+        box-shadow: 0 0 2.5px black;
     }
 
     .navbar {
@@ -661,5 +675,13 @@ footer .footer-contact a {
         font-size: max(2vw, 20px);
         left: -14.5%;
         top: -15%;
+    }
+
+    #skills .skill-deck {
+        margin: 100px 50px;
+    }
+
+    #skills .skill-deck h2 {
+        font-size: 40px;
     }
 }

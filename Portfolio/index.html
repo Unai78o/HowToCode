@@ -5,7 +5,6 @@
         - Hacer el script de los projectos para hacer scroll lateral
         - Hacer script del menu
         - Arreglar el titulo de las skills en pantallas menores de 600px
-        - Script ddse animacion para las diferentes secciones al aparecer cuando hago scroll
     -->
 <head>
     <meta charset="UTF-8">
@@ -25,7 +24,7 @@
 </head>
 <body>
     <div class="navbar">
-        <svg class="logo" version="1.0" xmlns="http://www.w3.org/2000/svg" width="275.000000pt" height="276.000000pt" viewBox="0 0 275.000000 276.000000" preserveAspectRatio="xMidYMid meet">
+        <svg class="logo" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 275.000000 276.000000" preserveAspectRatio="xMidYMid meet">
             <g transform="translate(0.000000,276.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                 <path d="M370 2703 c-150 -163 -279 -442 -341 -738 -32 -147 -34 -446 -5 -600
                 36 -198 126 -432 216 -566 175 -259 426 -470 757 -638 139 -71 343 -161 364
@@ -64,11 +63,11 @@
         </div>
     </header>
     <section id="about-me">
-        <div>
-            <h2>About me</h2>
-            <p>I'm a student of bachelor from Spain that was attracted to programming when I had 16 years old, so I started gaining knowledge by myself. After the bachelor's degree,
+        <div class="hidden">
+            <h2 class="hidden">About me</h2>
+            <p class="hidden">I'm a student of bachelor from Spain that was attracted to programming when I had 16 years old, so I started gaining knowledge by myself. After the bachelor's degree,
              I'll go to university and take a computer science degree. At the moment I'm focused on front-end development, but with time my goal is to be a full-stack developer.  </p>
-            <h3>See the progress of my skills on my <a href="https://twitter.com/ucode_lo" target="_blank">twitter</a> and <a href="https://github.com/Unai78o" target="_blank">github</a>.</h3>
+            <h3 class="hidden">See the progress of my skills on my <a href="https://twitter.com/ucode_lo" target="_blank">twitter</a> and <a href="https://github.com/Unai78o" target="_blank">github</a>.</h3>
         </div>
     </section>
     <section id="skills">
@@ -79,29 +78,29 @@
                 <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
             </svg>
         </div>
-        <h2>My skills</h2>
+        <h2 class="hidden">My skills</h2>
         <div class="skill-deck">
-            <div class="skill-card js-card">
+            <div class="skill-card js-card hidden">
                 <i class="devicon-javascript-plain"></i>
                 <p>JavaScript</p>
             </div>
-            <div class="skill-card html-card"> 
+            <div class="skill-card html-card hidden"> 
                 <i class="devicon-html5-plain"></i>
                 <p>HTML5</p>
             </div>
-            <div class="skill-card css-card">
+            <div class="skill-card css-card hidden">
                 <i class="devicon-css3-plain"></i>
                 <p>CSS3</p>
             </div>
-            <div class="skill-card py-card">         
+            <div class="skill-card py-card hidden">         
                 <i class="devicon-python-plain"></i>
                 <p>Python</p>
             </div>
         </div>
     </section>
     <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="project-deck">
+        <h2 class="hidden">Portfolio</h2>
+        <div class="project-deck hidden">
             <div class="project-arrow project-arrow-left">
                 <i class="fa-solid fa-chevron-left fa-fw"></i>
             </div>
@@ -124,8 +123,8 @@
                 <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
             </svg>
         </div>
-        <h2>Contact me</h2>
-        <form action="process_form.php" method="POST" target="_blank">
+        <h2 class="hidden">Contact me</h2>
+        <form class="hidden" action="process_form.php" method="POST" target="_blank">
             <input type="text" name="fname" class="form-input form-input-small" placeholder="Full Name">
             <input type="text" name="email" class="form-input form-input-small" placeholder="Email">
             <input type="text" name="subject" class="form-input form-input-small" placeholder="Subject">

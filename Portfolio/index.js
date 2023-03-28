@@ -1,4 +1,11 @@
-const menuBtnEl = document.querySelector(".menu")
+const hiddenEl = document.querySelectorAll(".hidden")
 
-menuBtnEl.addEventListener("click", () => {
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show")
+        }
+    }) 
 })
+
+hiddenEl.forEach((el) => observer.observe(el))
